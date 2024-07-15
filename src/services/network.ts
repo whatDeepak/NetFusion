@@ -19,7 +19,7 @@ export function detectInterfaces(): NetworkInterface[] {
     const interfaces = networkInterfaces[name]
     if (interfaces) {
       for (const iface of interfaces) {
-        if(isGoodInterface(iface)){
+        if (isGoodInterface(iface)) {
           interfaceList.push({
             name,
             address: iface.address,
